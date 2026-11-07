@@ -73,6 +73,19 @@ def is_sensitive(m, ranges, cfg):
     return hit and not any(k in t for k in cfg["keep_keywords"])  # 공개 모집 공고는 남김
 
 
+SURNAMES = set("김이박최정강조윤장임한오서신권황안송류전홍고문양손배백허유남심노하곽성차주우구민진지엄채원천방공현함변염여추도소석선설마길연위표명기반왕금옥육인맹제모탁국어은편용예경봉사부")
+
+
+def name_variants(name):
+    """표시 이름 'UMC 홍길동/디자인' → ['UMC 홍길동/디자인', '홍길동', '길동']
+    본문에선 '홍길동님', '길동아'처럼 부르므로 실명(성씨로 시작하는 3글자)과 이름 2글자도 치환 대상"""
+    out = [name]
+    for tok in re.findall(r"(?<![가-힣])[가-힣]{3}(?![가-힣])", name):
+        if tok[0] in SURNAMES:
+            out += [tok, tok[1:]]
+    return out
+
+
 def mask_plain(t, names):
     for name in sorted(names, key=len, reverse=True):  # 긴 이름부터 치환 ("김철수" 먼저, "철수" 나중)
         t = t.replace(name, names[name])
@@ -111,7 +124,9 @@ def main(src):
     extra_names = [l.strip() for l in extra.read_text(encoding="utf-8").splitlines()
                    if l.strip() and not l.startswith("#")] if extra.exists() else []
     for n in senders + extra_names:
-        names.setdefault(n, f"멤버{len(names) + 1}")
+        alias = names.get(n) or f"멤버{len(set(names.values())) + 1}"
+        for v in name_variants(n):  # 같은 사람의 여러 표기 → 같은 멤버N
+            names.setdefault(v, alias)
     for i, m in enumerate(msgs):
         m["id"] = i
         m["sender"] = names[m["sender"]]
