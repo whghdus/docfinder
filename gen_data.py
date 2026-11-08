@@ -44,6 +44,8 @@ PROMPT = """다음은 대학 IT 동아리 운영진 카카오톡 단톡방 메�
 def make_train(n_target=300, k=5):
     from llm import ask
     seeds = load_seeds()
+    # 양성/음성이 번갈아 나오게 정렬 → 300건에서 끊겨도 라벨 비율이 한쪽으로 쏠리지 않음
+    seeds = seeds.assign(r=seeds.groupby("is_relevant").cumcount()).sort_values(["r", "is_relevant"]).reset_index(drop=True)
     if len(seeds) < 30:
         sys.exit(f"시드가 {len(seeds)}건입니다. data/seeds.csv에 30건 이상 필요합니다.")
     test_path = Path("data/label_template.csv")
