@@ -1,5 +1,5 @@
 """LLM 호출 한 곳으로 모음. 제공자/모델/키는 .env에서만 읽음 (코드에 박지 않음)"""
-import os
+import json, os, urllib.request
 from functools import lru_cache
 from dotenv import load_dotenv
 
@@ -14,7 +14,14 @@ def gemini_client(key):
 
 
 def ask(prompt: str) -> str:
-    provider, model, key = (os.environ[k] for k in ("LLM_PROVIDER", "LLM_MODEL", "LLM_API_KEY"))
+    provider, model = os.environ["LLM_PROVIDER"], os.environ["LLM_MODEL"]
+    key = os.getenv("LLM_API_KEY")  # ollama는 키 불필요
+    if provider == "ollama":
+        # 로컬 Ollama 서버에 HTTP 요청. 데이터가 PC 밖으로 나가지 않음
+        body = {"model": model, "messages": [{"role": "user", "content": prompt}], "stream": False}
+        req = urllib.request.Request("http://localhost:11434/api/chat", data=json.dumps(body).encode(),
+                                     headers={"Content-Type": "application/json"})
+        return json.load(urllib.request.urlopen(req, timeout=600))["message"]["content"]
     if provider == "anthropic":
         import anthropic
         r = anthropic.Anthropic(api_key=key).messages.create(
