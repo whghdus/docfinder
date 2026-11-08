@@ -17,4 +17,8 @@ def ask(prompt: str) -> str:
         r = OpenAI(api_key=key).chat.completions.create(
             model=model, messages=[{"role": "user", "content": prompt}])
         return r.choices[0].message.content
+    if provider == "gemini":
+        from google import genai
+        r = genai.Client(api_key=key).models.generate_content(model=model, contents=prompt)
+        return r.text
     raise ValueError(f"지원하지 않는 LLM_PROVIDER: {provider}")
