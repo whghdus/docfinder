@@ -1,6 +1,6 @@
 """
 python gen_data.py template : 마스킹 로그 → test 후보 100건 → data/label_template.csv (라벨은 사용자가 직접)
-python gen_data.py train    : 직접 쓴 시드(data/seeds.csv) → LLM 변형 300건 → data/train.csv
+python gen_data.py train    : 시드(data/seeds.csv, Claude 초안 + 사용자 검수) → LLM 변형 300건 → data/train.csv
   * test 메시지는 생성기에 절대 넣지 않음. 생성 결과가 test 후보와 비슷하면 버림(누수 방지)
 """
 import io, json, re, sys
@@ -44,7 +44,7 @@ def make_train(n_target=300, k=5):
     from llm import ask
     seeds = load_seeds()
     if len(seeds) < 30:
-        sys.exit(f"시드가 {len(seeds)}건입니다. data/seeds.csv에 30건 이상 써주세요.")
+        sys.exit(f"시드가 {len(seeds)}건입니다. data/seeds.csv에 30건 이상 필요합니다.")
     test_path = Path("data/label_template.csv")
     test_texts = pd.read_csv(test_path)["text"].tolist() if test_path.exists() else []
 
@@ -60,7 +60,7 @@ def make_train(n_target=300, k=5):
         i += 1
 
     gen = dedup(rows)[:n_target]  # 생성물끼리 거의 같은 문장 제거
-    hand = [{"text": t, "is_relevant": int(l), "source": "handwritten", "seed_id": j}
+    hand = [{"text": t, "is_relevant": int(l), "source": "seed", "seed_id": j}
             for j, (t, l) in enumerate(zip(seeds["text"], seeds["is_relevant"]))]
     train = pd.DataFrame(hand + gen)
     train.insert(0, "id", range(len(train)))
