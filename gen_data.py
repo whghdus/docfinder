@@ -27,7 +27,8 @@ def make_template(n_total=100, max_pos=45, seed=42):
 
 
 def load_seeds():
-    lines = [l for l in Path("data/seeds.csv").read_text(encoding="utf-8").splitlines() if not l.startswith("#")]
+    text = Path("data/seeds.csv").read_text(encoding="utf-8-sig")  # utf-8-sig: 엑셀용 BOM 제거
+    lines = [l for l in text.splitlines() if not l.startswith("#")]
     return pd.read_csv(io.StringIO("\n".join(lines)))
 
 
