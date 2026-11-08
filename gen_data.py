@@ -32,13 +32,20 @@ def load_seeds():
     return pd.read_csv(io.StringIO("\n".join(lines)))
 
 
-PROMPT = """다음은 대학 IT 동아리 운영진 카카오톡 단톡방 메시지입니다.
-같은 성격(자료 공유/위치 안내 여부)을 유지하면서 프로젝트명, 날짜, 링크, 말투를 바꾼 새 메시지 {k}개를 만드세요.
+PROMPT = """대학 IT 동아리 운영진 카카오톡 단톡방 메시지를 만듭니다.
+아래 예시와 비슷한 상황의 새 메시지 {k}개를 쓰세요.
+{rule}
+- 카톡처럼 짧고 편한 말투 (10~60자, 링크 제외)
 - 실존 인물 이름, 이메일, 전화번호는 쓰지 마세요.
-- 링크가 필요하면 https://www.notion.so/ 뒤에 임의의 32자리 16진수를 붙인 가짜 URL을 쓰세요.
 - JSON 문자열 배열로만 답하세요. 예: ["메시지1", "메시지2"]
 
-메시지: {text}"""
+예시: {text}"""
+# 라벨별 규칙: 1차 생성에서 음성에도 URL이 들어가 라벨 노이즈가 생겨 분리함
+RULES = {
+    1: "- 반드시 자료의 링크 또는 위치(노션 페이지 경로, 드라이브 폴더 등)를 알려주는 메시지\n"
+       "- 링크는 https://www.notion.so/ 뒤에 임의의 32자리 16진수를 붙인 가짜 URL",
+    0: "- 자료 공유가 아닌 메시지 (잡담, 대답, 일정 조율, 질문)\n- 링크, URL, 자료 위치는 절대 넣지 마세요",
+}
 
 
 def make_train(n_target=300, k=5):
@@ -54,10 +61,11 @@ def make_train(n_target=300, k=5):
     test_texts = pd.read_csv(test_path, encoding="utf-8-sig")["text"].astype(str).tolist()
     print(f"누수 검사 대상: {test_path} {len(test_texts)}건")
 
-    rows, n_leak, n_bad, i = [], 0, 0, 0
+    rows, n_leak, n_bad, n_url, i = [], 0, 0, 0, 0
     while len(rows) < n_target:
         s = seeds.iloc[i % len(seeds)]
-        reply = ask(PROMPT.format(k=k, text=s["text"]))
+        label = int(s["is_relevant"])
+        reply = ask(PROMPT.format(k=k, rule=RULES[label], text=s["text"]))
         i += 1
         try:  # 소형 모델은 가끔 JSON 형식을 틀림 → 그 응답만 건너뜀
             texts = [t for t in json.loads(reply[reply.find("["): reply.rfind("]") + 1]) if isinstance(t, str)]
@@ -69,7 +77,10 @@ def make_train(n_target=300, k=5):
             if any(similarity(t, x) >= 0.6 for x in test_texts):  # test와 비슷한 문장은 버림
                 n_leak += 1
                 continue
-            rows.append({"text": t, "is_relevant": int(s["is_relevant"]), "source": "llm_generated", "seed_id": (i - 1) % len(seeds)})
+            if label == 0 and "http" in t:  # 음성인데 링크가 들어간 문장은 라벨이 틀린 것 → 버림
+                n_url += 1
+                continue
+            rows.append({"text": t, "is_relevant": label, "source": "llm_generated", "seed_id": (i - 1) % len(seeds)})
 
     gen = dedup(rows)[:n_target]  # 생성물끼리 거의 같은 문장 제거
     hand = [{"text": t, "is_relevant": int(l), "source": "seed", "seed_id": j}
@@ -79,7 +90,7 @@ def make_train(n_target=300, k=5):
     train.to_csv("data/train.csv", index=False)
 
     seed_leak = sum(any(similarity(t, x) >= 0.6 for x in test_texts) for t in seeds["text"])
-    print(f"LLM 호출 {i}회 (JSON 형식 오류로 건너뜀 {n_bad}회), 생성 {len(rows) + n_leak}건 중 test 유사로 버림 {n_leak}건, 중복 제거 후 {len(gen)}건 사용")
+    print(f"LLM 호출 {i}회 (JSON 형식 오류로 건너뜀 {n_bad}회), 생성 {len(rows) + n_leak + n_url}건 중 test 유사로 버림 {n_leak}건, 음성인데 URL 있어 버림 {n_url}건, 중복 제거 후 {len(gen)}건 사용")
     print(f"시드 {len(hand)}건 중 test 유사 {seed_leak}건 (0이어야 함)")
     print(f"train.csv: {len(train)}건 (양성 {train['is_relevant'].sum()}, 음성 {(train['is_relevant'] == 0).sum()})")
 
