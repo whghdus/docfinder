@@ -3,7 +3,7 @@ python gen_data.py template : 마스킹 로그 → test 후보 100건 → data/l
 python gen_data.py train    : 시드(data/seeds.csv, Claude 초안 + 사용자 검수) → LLM 변형 300건 → data/train.csv
   * test 메시지는 생성기에 절대 넣지 않음. 생성 결과가 test 후보와 비슷하면 버림(누수 방지)
 """
-import io, json, re, sys
+import io, json, random, re, sys
 from pathlib import Path
 import pandas as pd
 from parse_kakao import dedup, similarity
@@ -42,6 +42,7 @@ PROMPT = """대학 IT 동아리 운영진 카카오톡 단톡방 메시지를 �
 
 예시:
 {examples}"""
+RNG = random.Random(42)  # 시드 고정 → 재실행해도 같은 가짜 URL
 EMOJI = re.compile(r"[\U0001F000-\U0001FAFF☀-➿]")
 # 라벨별 규칙: 1차 생성에서 음성에도 URL이 들어가 라벨 노이즈가 생겨 분리함
 RULES = {
@@ -89,6 +90,8 @@ def make_train(n_target=300, k=5):
             if EMOJI.search(t):  # 시드에 없는 이모지 → AI 말투로 보고 버림
                 n_emoji += 1
                 continue
+            # 모델이 쓴 "abcdef1234..." 같은 가짜 ID는 패턴이 뻔해서 분류기가 그걸 단서로 배울 수 있음 → 랜덤 ID로 교체
+            t = re.sub(r"https?://www\.notion\.so/\S+", lambda m: f"https://www.notion.so/{RNG.getrandbits(128):032x}", t)
             rows.append({"text": t, "is_relevant": label, "source": "llm_generated", "seed_id": (i - 1) % len(seeds)})
 
     gen = dedup(rows)[:n_target]  # 생성물끼리 거의 같은 문장 제거
