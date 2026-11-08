@@ -49,16 +49,22 @@ def make_train(n_target=300, k=5):
     test_path = Path("data/label_template.csv")
     test_texts = pd.read_csv(test_path)["text"].tolist() if test_path.exists() else []
 
-    rows, n_leak, i = [], 0, 0
+    rows, n_leak, n_bad, i = [], 0, 0, 0
     while len(rows) < n_target:
         s = seeds.iloc[i % len(seeds)]
         reply = ask(PROMPT.format(k=k, text=s["text"]))
-        for t in json.loads(reply[reply.find("["): reply.rfind("]") + 1]):
+        i += 1
+        try:  # 소형 모델은 가끔 JSON 형식을 틀림 → 그 응답만 건너뜀
+            texts = [t for t in json.loads(reply[reply.find("["): reply.rfind("]") + 1]) if isinstance(t, str)]
+        except json.JSONDecodeError:
+            n_bad += 1
+            continue
+        print(f"호출 {i}회, 누적 {len(rows)}건", flush=True)
+        for t in texts:
             if any(similarity(t, x) >= 0.6 for x in test_texts):  # test와 비슷한 문장은 버림
                 n_leak += 1
                 continue
-            rows.append({"text": t, "is_relevant": int(s["is_relevant"]), "source": "llm_generated", "seed_id": i % len(seeds)})
-        i += 1
+            rows.append({"text": t, "is_relevant": int(s["is_relevant"]), "source": "llm_generated", "seed_id": (i - 1) % len(seeds)})
 
     gen = dedup(rows)[:n_target]  # 생성물끼리 거의 같은 문장 제거
     hand = [{"text": t, "is_relevant": int(l), "source": "seed", "seed_id": j}
@@ -68,7 +74,7 @@ def make_train(n_target=300, k=5):
     train.to_csv("data/train.csv", index=False)
 
     seed_leak = sum(any(similarity(t, x) >= 0.6 for x in test_texts) for t in seeds["text"])
-    print(f"LLM 호출 {i}회, 생성 {len(rows) + n_leak}건 중 test 유사로 버림 {n_leak}건, 중복 제거 후 {len(gen)}건 사용")
+    print(f"LLM 호출 {i}회 (JSON 형식 오류로 건너뜀 {n_bad}회), 생성 {len(rows) + n_leak}건 중 test 유사로 버림 {n_leak}건, 중복 제거 후 {len(gen)}건 사용")
     print(f"시드 {len(hand)}건 중 test 유사 {seed_leak}건 (0이어야 함)")
     print(f"train.csv: {len(train)}건 (양성 {train['is_relevant'].sum()}, 음성 {(train['is_relevant'] == 0).sum()})")
 
