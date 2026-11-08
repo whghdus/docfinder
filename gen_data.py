@@ -48,8 +48,11 @@ def make_train(n_target=300, k=5):
     seeds = seeds.assign(r=seeds.groupby("is_relevant").cumcount()).sort_values(["r", "is_relevant"]).reset_index(drop=True)
     if len(seeds) < 30:
         sys.exit(f"시드가 {len(seeds)}건입니다. data/seeds.csv에 30건 이상 필요합니다.")
-    test_path = Path("data/label_template.csv")
-    test_texts = pd.read_csv(test_path)["text"].tolist() if test_path.exists() else []
+    test_path = next((p for p in [Path("data/test.csv"), Path("data/label_template.csv")] if p.exists()), None)
+    if test_path is None:
+        sys.exit("data/test.csv가 없어 누수 검사를 할 수 없습니다.")
+    test_texts = pd.read_csv(test_path, encoding="utf-8-sig")["text"].astype(str).tolist()
+    print(f"누수 검사 대상: {test_path} {len(test_texts)}건")
 
     rows, n_leak, n_bad, i = [], 0, 0, 0
     while len(rows) < n_target:
