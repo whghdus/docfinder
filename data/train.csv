@@ -1,0 +1,341 @@
+id,text,is_relevant,source,seed_id
+0,다들 오늘 행사 진행하느라 고생 많으셨어요!,0,seed,0
+1,이번 주 정기회의 회의록 노션에 올려뒀습니다 https://www.notion.so/7f2a91c04be34d1e9a6b5c8d0e1f2a3b 안건 미리 확인해주세요,1,seed,1
+2,혹시 회의 몇 시에 시작하는지 아시는 분?,0,seed,2
+3,해커톤 참가 신청 구글폼입니다 https://forms.gle/Xk29dPq8LmTn3Rva7 11월 14일 금요일까지 제출 부탁드려용,1,seed,3
+4,저 오늘 수업 때문에 10분 정도 늦을 것 같아요,0,seed,4
+5,톡게시판 '공지': 2학기 회비 납부 안내 - 운영진 노션 → 회비 페이지에 계좌랑 금액 정리해뒀습니다~,1,seed,5
+6,넵 확인했습니다,0,seed,6
+7,상벌점 기준표는 운영진 노션 부원 관리 탭 안에 있으니 확인하세요,1,seed,7
+8,점심 다들 뭐 드실래요 학식 갈까요,0,seed,8
+9,투표 올렸으니까 오늘까지 꼭! 하기!\,1,seed,9
+10,오늘까지 과제 마감이라 회의 끝나고 회의록 바로 볼게요,0,seed,10
+11,네트워킹 장소 후보 정리한 시트 공유드려요 https://docs.google.com/spreadsheets/d/1aB2cD3eF4gH5iJ6kL7mN8oP9qR0sT ,1,seed,11
+12,노션 페이지 어디에 있어요?,0,seed,12
+13,스터디 그룹 편성 결과 노션 공지 페이지에 업데이트했으니 각 스터디 담당자들 확인,1,seed,13
+14,다음 주에 시험 있는 분들 화이팅입니다,0,seed,14
+15,네트워킹데이 기획안 초안입니다 https://www.notion.so/2c9e4d7a1b8f40e3a5d6c7b8e9f0a1b2 수요일 회의 전까지 코멘트 달아주세요,1,seed,15
+16,링크 어디 있는지 모르겠어요 혹시 다시 보내주실 수 있나요?,0,seed,16
+17,신입 부원 OT 자료 드라이브에 올렸어요 공유 드라이브 → 2학기 → OT 폴더입니다,1,seed,17
+18,아 그거 제가 이따 집 가서 확인해볼게요,0,seed,18
+19,다음 주 화요일 운영진 회의 안건 정리 노션 링크입니다 https://www.notion.so/9d1b3f5e7a2c4b6d8e0f1a3c5e7b9d2f,1,seed,19
+20,행사 끝나고 뒷풀이 가실 분 손!,0,seed,20
+21,부원 출석 체크 시트는 회의록 페이지 맨 아래에 링크 걸어뒀어요,1,seed,21
+22,ㅋㅋㅋㅋ 그날 진짜 웃겼는데,0,seed,22
+23,챌린저 모집 공고문 최종본 올립니다 https://www.notion.so/4e6a8c0b2d4f46a8b0c2e4f6a8b0c2d4 수정할 부분 있으면 금요일까지 알려주세요,1,seed,23
+24,회의 내용 다 동의하시나요? 말하세요.,0,seed,24
+25,행사 사진 업로드용 드라이브 폴더 만들었어요 https://drive.google.com/drive/folders/1Qw2Er3Ty4Ui5Op6As7Df8Gh9Jk 각자 찍은 사진 올려주세요,1,seed,25
+26,오늘 날씨 너무 춥네요 다들 감기 조심하세요,0,seed,26
+27,중간 점검 설문 링크입니다 https://forms.gle/Ab3Cd5Ef7Gh9Ij1K2 부원분들께 이번 주 일요일까지 돌려주세요,1,seed,27
+28,혹시 이번 주 금요일에 시간 되시는 분 있나요?,0,seed,28
+29,파트별 커리큘럼은 노션 행사 기획 → 스터디 → 커리큘럼 페이지 보시면 됩니다,1,seed,29
+30,감사합니다 덕분에 잘 해결됐어요,0,seed,30
+31,공지 올렸습니다..노션 확인하세요,1,seed,31
+32,저 오늘 회의 참석 못 할 것 같아요 죄송합니다,0,seed,32
+33,예산 사용 내역 정리 시트 공유합니다 https://docs.google.com/spreadsheets/d/9zY8xW7vU6tS5rQ4pO3nM2lK1jI 영수증 사진도 같이 첨부해주세요,1,seed,33
+34,투표 안 한 사람 개인 톡으로 말하세요,0,seed,34
+35,해커톤 심사 기준표 노션에 정리했어요 https://www.notion.so/6b8d0f2a4c6e48a0b2d4f6a8c0e2a4b6,1,seed,35
+36,내일 발표 자료 아직 다 못 만들어서 밤새야 할 듯요,0,seed,36
+37,홍보 포스터 시안 피그마 링크입니다 https://www.figma.com/file/Mn4Bv6Cx8Za0Sd2Fg4Hj6Kl 투표는 내일 오후 6시까지예요,1,seed,37
+38,다음 회의 때 알아오기,0,seed,38
+39,면담 일정 잡는 when2meet 링크입니다 https://www.when2meet.com/?12345678-AbCdE 가능한 시간 체크해주세요,1,seed,39
+40,이번 주말 행사 준비 때문에 다들 너무 바쁘네요 ㅠㅠ,0,llm_generated,0
+41,저녁 식사 시간 좀 정해볼까요? 아니면 같이 뭐 먹을지 아이디어 좀 냈으면 좋겠어요.,0,llm_generated,0
+42,내일 회의 시간 혹시 변경될 가능 있나요? 제가 다른 일 때문에 겹치는 시간이 생겨서요.,0,llm_generated,0
+43,"지난번 제안드린 홍보 문구, 좀 더 다듬어서 다시 보내드릴게요.",0,llm_generated,0
+44,"혹시 새로 들어온 맴버 있는데, 멘토링 어떻게 할지 논의 좀 해봐요.",0,llm_generated,0
+45,이번 달 서버 유지보수 일정 관련 자료 노션 페이지 업데이트했습니다. https://www.notion.so/bdd640fb06671ad11c80317fa3b1799d 확인 후 진행 상황 공유 부탁드립니다.,1,llm_generated,1
+46,다음 주 스터디 주제 제안 받습니다. 아이디어는 폼에 작성해서 제출해주세요 https://www.notion.so/23b8c1e9392456de3eb13b9046685257 모든 아이디어 검토 후 결정하겠습니다.,1,llm_generated,1
+47,이번 주 운영 회의 안건 확인 및 참석 여부 회신 부탁드립니다. 노션 페이지 링크: https://www.notion.so/bd9c66b3ad3c2d6d1a3d1fa7bc8960a9 모든 운영진의 참여가 중요합니다.,1,llm_generated,1
+48,새로운 프로젝트 마감일 조정 요청이 들어왔습니다. 관련 자료는 드라이브 폴더에서 확인해주세요 https://drive.google.com/drive/folders/123abc456def7890ghi1234jkl 저에게 연락주시면 상세 내용을 알려드리겠습니다.,1,llm_generated,1
+49,다음 주 활동 관련 홍보 문구 초안입니다. https://www.notion.so/972a846916419f828b9d2434e465e150 작업해주시고 의견 공유해주세요.,1,llm_generated,1
+50,이번 주말 워크샵 장소 최종 확정된 거 확인 부탁드립니다.,0,llm_generated,2
+51,새로 합류하는 멤버 오리엔테이션 준비는 잘 되어가나요?,0,llm_generated,2
+52,"내일 발표 자료 훑어봐야 하는데, 혹시 미리 공유해주실 분 계신가요?",0,llm_generated,2
+53,다음 회의 안건 미리 공유해주시면 준비하는데 도움이 될 것 같아요.,0,llm_generated,2
+54,"오늘 저녁 7시, 간단한 회식 모임 있으신 분들 알려주세요.",0,llm_generated,2
+55,"이번 주 금요일 오후 2시, 프로젝트 발표 연습 세미나 진행 예정입니다. 관련 자료는 드라이브 폴더 '프로젝트' 탭에서 확인 부탁드립니다.",1,llm_generated,3
+56,"다음 주 화요일, 동아리 주차 회의 시간입니다. 논의 안건은 미리 공유 부탁드려요. 관련 링크는 노션 페이지 '회의 안건' 참고해주세요.",1,llm_generated,3
+57,새로운 프로젝트 아이디어 있으면 언제든 편하게 제안해주세요. 아이디어는 엑셀 시트에 정리하고 있습니다. 링크: https://forms.gle/aBcDeFgHiJkLmNoPqRstUvWxYz,1,llm_generated,3
+58,이번 달 동아리 운영비 사용 내역 확인 및 다음 달 예산 계획을 위한 회의가 필요합니다. 관련 자료는 노션 페이지 '운영비'에서 확인해주세요.,1,llm_generated,3
+59,"다음 주 일요일, 간단한 팀 친목 활동을 진행할 예정입니다. 자세한 내용은 톡방에 다시 공지하겠습니다. 참여 의사 있는 분은 댓글로 알려주세요.",1,llm_generated,3
+60,이번 주 주차 회의 시간 내일로 조정하는 거 괜찮을까요?,0,llm_generated,4
+61,모두들 이번 달 운영비 사용 내역 확인하셨나요?,0,llm_generated,4
+62,내일 멘토링 세션 준비물 다시 한번 확인 부탁드립니다.,0,llm_generated,4
+63,새로운 프로젝트 아이디어 있으신 분들 의견 부탁드려요.,0,llm_generated,4
+64,오늘 저녁 8시쯤 간단히 회식하는 거 어때요?,0,llm_generated,4
+65,이번 주 팀 회의 안건은 웹사이트 디자인 개선 방향 및 콘텐츠 제작 일정입니다. 관련 자료는 노션 페이지에서 확인 부탁드립니다: https://www.notion.so/17fc695a07a0ca6e0822e8f36c031199,1,llm_generated,5
+66,이번 달 정모 장소는 3층 회의실로 확정되었습니다. 참석 여부를 오늘 오후 6시까지 알려주시면 준비하겠습니다. 관련 일정은 노션 페이지 참조: https://www.notion.so/9a1de644815ef6d13b8faa1837f8a88b,1,llm_generated,5
+67,새로운 프로젝트 'OO' 진행을 위해 필요한 서버 구축 관련 정보는 드라이브 폴더에 첨부했습니다. 자세한 내용은 https://drive.google.com/drive/folders/1a2b3c4d5e6f78901234567890abcdef 에서 확인해주세요.,1,llm_generated,5
+68,다음 주 진행될 기술 세미나 발표 자료는 노션 페이지에 업로드했습니다. 발표자료 준비 잘 부탁드립니다: https://www.notion.so/b74d0fb132e706298fadc1a606cb0fb3,1,llm_generated,5
+69,이번 주 활동 결과 보고서 작성 관련하여 템플릿을 노션 페이지에 추가했습니다. 참고하시고 작성해주세요: https://www.notion.so/6b65a6a48b8148f6b38a088ca65ed389,1,llm_generated,5
+70,이번 주말 서버 점검 회의 시간 오후 2시로 조정될 예정인데 확인 부탁드립니다.,0,llm_generated,6
+71,내일 발표 자료 미리 볼 사람 있을까요?,0,llm_generated,6
+72,"새로운 프로젝트 기획안 검토할 때, 서로 의견 교환은 언제 하는 게 좋을까요?",0,llm_generated,6
+73,이번 달 예산 상황 한번 정리해서 공유 좀 부탁해요.,0,llm_generated,6
+74,점검 관련해서 혹시 잊은 것 있나 확인 부탁드립니다.,0,llm_generated,6
+75,이번 주 운영 회의 안건은 모두 노션 팀 운영 채널에 정리했으니 참고해주세요. https://www.notion.so/4737819096da1dac72ff5d2a386ecbe0,1,llm_generated,7
+76,다음 주 진행될 시스템 점검 일정 관련 자료는 드라이브 폴더 ‘IT 운영’의 2023년 10월 세부 일정에서 확인 부탁드립니다. https://drive.google.com/drive/folders/abcdefg1234567890abcdefg1234567890,1,llm_generated,7
+77,새로운 웹사이트 디자인 컨셉 시안 3가지 업데이트 완료했습니다. 노션 페이지 ‘웹사이트 디자인’에서 최신 자료 확인해주세요. https://www.notion.so/c241330b01a9e71fde8a774bcf36d58b,1,llm_generated,7
+78,이번 주 진행된 프로젝트 회의록은 노션 페이지 ‘프로젝트 회의록’에 첨부했습니다. 꼼꼼히 확인하시고 궁금한 점은 바로 질문해주세요. https://www.notion.so/6c307511b2b9437a28df6ec4ce4a2bbd,1,llm_generated,7
+79,다음 달 IT 컨퍼런스 참가 신청 마감일이 12월 15일입니다. 참가 관련 자세한 내용은 노션 페이지 ‘컨퍼런스 참가’를 참고해주세요. https://www.notion.so/371ecd7b27cd813047229389571aa876,1,llm_generated,7
+80,이번 주 주차 회의 시간 오후 7시로 조정했는데 확인 부탁드립니다.,0,llm_generated,8
+81,내일 발표 자료 어떤가요? 혹시 늦어지면 미리 알려주세요.,0,llm_generated,8
+82,오늘 저녁 8시부터 떡볶이 먹으러 갈 사람 있나요?,0,llm_generated,8
+83,이번 달 행사 후원금 모금은 잘 진행되고 있나요?,0,llm_generated,8
+84,새로 올라온 기술 동향 관련 자료 좀 살펴봐주세요.,0,llm_generated,8
+85,"이번 주 회의 안건 미리 봐두시고, 의견 있으시면 챙겨주세요.",1,llm_generated,9
+86,"다음 주 주차 회의 시간 확정: 월요일 오후 7시, 온라인 회의실 링크 첨부합니다. https://www.notion.so/1a2a73ed562b0f79c37459eef50bea63",1,llm_generated,9
+87,이번 주 업계 동향 보고서 드라이브에 업로드했습니다. '동아리명' 폴더에서 확인 부탁드립니다. https://www.notion.so/5be6128e18c267976142ea7d17be3111,1,llm_generated,9
+88,저녁에 간단하게 모여서 아이디어 구상할까요?,0,llm_generated,10
+89,"새로운 프로젝트 관련해서 궁금한 점이 몇 가지 있는데, 잠깐 시간 괜찮으신 분 1분만 알려주세요.",0,llm_generated,10
+90,내일 회의 안건 미리 보내드릴까요? 확인 후 의견 부탁드립니다.,0,llm_generated,10
+91,오늘 늦게까지 작업해야 할 것 같아요. 혹시 저녁에 뭐 드실지 미리 얘기해주세요.,0,llm_generated,10
+92,이번 주 서버 구축 프로젝트 관련 자료는 드라이브 폴더 [https://drive.google.com/drive/folders/1gH5jKl8nM2zXyPqR9aW3v4z5t6u7] 에서 확인 부탁드립니다.,1,llm_generated,11
+93,다음 주 운영 회의 안건은 모두 Notion 페이지 [https://www.notion.so/43b7a3a69a8dca03580d7b71d8f56413 에 정리했습니다. 참석 여의시면 회비 5천원씩 받겠습니다.,1,llm_generated,11
+94,새로운 부원 모집을 위한 홍보물 초안입니다. 디자인 작업은 [https://www.notion.so/759cde66bacfb3d00b1f9163ce9ff57f 에서 수정해주세요. 마감은 금요일까지입니다.,1,llm_generated,11
+95,이번 달 IT 컨퍼런스 참가 신청 마감일이 다가오고 있습니다. 참가자 확정은 [https://www.notion.so/ec1b8ca1f91e1d4c1ff49b7889463e85 페이지에서 진행합니다.,1,llm_generated,11
+96,다음 주 네트워킹 행사 관련 장소 예약은 [https://www.notion.so/4b0dbb418d5288f1142c3fe860e7a113 에서 진행할 예정입니다. 혹시 다른 제안 있으시면 알려주세요.,1,llm_generated,11
+97,내일 프레젠테이션 자료 좀 다시 한번 확인 부탁드려요.,0,llm_generated,12
+98,이번 달 운영비 사용 내역 한번 정리해서 공유 부탁할게요.,0,llm_generated,12
+99,"다음 주 프로젝트 미팅 시간, 오후 2시로 할까요?",0,llm_generated,12
+100,새로운 아이디어 있으면 언제든 편하게 말씀해주세요.,0,llm_generated,12
+101,혹시 이번 주말에 간단한 모임 있으면 좋을까요?,0,llm_generated,12
+102,이번 주 서버 점검 일정 관련 자료를 노션 페이지에 정리했습니다. https://www.notionsofficial.com/abcd1234567890abcdef1234567890,1,llm_generated,13
+103,다음 행사 홍보물 디자인 초안을 드라이브에 업로드했습니다. https://drive.google.com/drive/folders/1a2b3c4d5e6f78901234567890abcd. 확인 후 피드백 부탁드립니다.,1,llm_generated,13
+104,다음 회의 안건과 준비 사항을 노션 페이지에 업데이트했습니다. https://www.notionexample.com/11223344556677889900112233445566. 참석자분들은 미리 검토 부탁드립니다.,1,llm_generated,13
+105,이번 달 IT 컨퍼런스 참가 신청 링크를 공유합니다. https://www.notiontest.com/9876543210abcdef9876543210abcdef. 마감일 전에 신청해주세요.,1,llm_generated,13
+106,새로운 웹사이트 개발 진행 상황 보고서를 드라이브에 공유했습니다. https://drive.google.com/drive/folders/abcdefg1234567890. 관련 내용을 확인해주세요.,1,llm_generated,13
+107,"이번 주말부로 서버 업그레이드 진행할 예정인데, 혹시 관련 자료 확인하셨나요?",0,llm_generated,14
+108,내일 회의 시간 혹시 변경될 가능성 있을까요? 미리 알려주시면 감사하겠습니다.,0,llm_generated,14
+109,"새로 합류하는 학생분들께 멘토링 일정 조율 중인데, 혹시 겹치는 부분이 있는지 알려주세요.",0,llm_generated,14
+110,"이번 프로젝트 중간 발표 자료, 좀 더 다듬어 볼까요?",0,llm_generated,14
+111,"오늘 밤 늦게까지 작업해야 할 것 같아서, 내일 회의에 조금 더 집중할 예정입니다.",0,llm_generated,14
+112,이번 주 주차별 활동 계획 공유드립니다. https://www.notion.so/e2acf72f9e574f7aa0ee89aed453dd32 확인 부탁드립니다.,1,llm_generated,15
+113,"다음 주 프로젝트 발표 자료 준비 관련해서, 관련 자료는 드라이브 폴더 ‘프로젝트’ 폴더 안에 있습니다.",1,llm_generated,15
+114,"이번 주 회의 안건 미리 검토해주시고, 아이디어 있으면 낼 모녁까지 공유 부탁드립니다. https://www.notion.so/3139d32c93cd59bf5c941cf0dc98d2c1",1,llm_generated,15
+115,새로운 부원 온보딩 자료는 노션 페이지 ‘온보딩’ 섹션에 있습니다. 꼼꼼히 확인해주세요.,1,llm_generated,15
+116,다음 주 진행될 기술 세미나 장소 및 시간 확정되었습니다. https://www.notion.so/a9488d990bbb259911ce5dd2b45ed1f0 9시부터 1시간 진행됩니다.,1,llm_generated,15
+117,이번 주말 서버 구축 워크숍 위치는 어떻게 됐어?,0,llm_generated,16
+118,알람 설정됐는지 확인해 놨어? 잊지 말라고 다시 한번!,0,llm_generated,16
+119,다음 주 화요일 2시 회의록 작성할 사람 정해졌어?,0,llm_generated,16
+120,새로운 아이디어 있으면 언제든지 편하게 공유해줘.,0,llm_generated,16
+121,"오늘 발표 자료 훑어봤는데, 몇 부분 수정하면 좋을 것 같아?",0,llm_generated,16
+122,이번 주 금요일 19시부터 온라인 튜터링 진행 예정입니다. 튜터링 자료는 드라이브 > 튜터링 > 2024년 자료 폴더 참고 부탁드립니다.,1,llm_generated,17
+123,새로운 프로젝트 아이디어 제안 채널 노션 페이지 업데이트 완료했습니다. 아이디어 제출 시 반드시 아래 링크를 통해 제안해주세요: https://www.notion.so/fc377a4c4a15544dc5e7ce8a3a578a8e,1,llm_generated,17
+124,다음 주 운영 회의 안건 및 참석자 명단은 노션 운영 회의 탭에서 확인 부탁드립니다. 회의 링크는 아래를 참고해주세요: https://www.notion.so/ddd1dfb23b982ef8daf61a26146d3f31,1,llm_generated,17
+125,이번 달 동아리 활동 목표 달성 현황은 노션 활동 보고서 탭에서 확인 및 피드백 부탁드립니다. 링크: https://www.notion.so/7412b29347294739614ff3d719db3ad0,1,llm_generated,17
+126,새로운 스터디 그룹 모집 안내를 톡게시판에 올리겠습니다. 톡게시판 위치: 운영진 노션 > 스터디 > 모집 안내 확인해주세요.,1,llm_generated,17
+127,이번 주말에 서버 점검 다시 한번 해보자구!,0,llm_generated,18
+128,"세상에, 다음 발표 자료 퀄리티 진짜 대박인데?",0,llm_generated,18
+129,이번 달 동아리비 비슷하게 내주세요.,0,llm_generated,18
+130,혹시 이 프로젝트 관련해서 더 필요한 정보 있을까요?,0,llm_generated,18
+131,내일 오전에 미팅 있엇네. 다들 확인 부탁.,0,llm_generated,18
+132,"이번 주말에 하는 스터디 자료 정리, Notion 페이지 링크 첨부했습니다 https://www.notion.so/29a3b2e95d65a441d58842dea2bc372f",1,llm_generated,19
+133,"다음 달 행사 장소 예약 완료되었으니, 참석자 리스트 다시 한번 확인 부탁드립니다. 드라이브 링크: https://drive.google.com/drive/folders/1xZ9y8tV2u3q4r5p6s7d8e9f",1,llm_generated,19
+134,"이번 주 운영시간, 새로운 IT 트렌드 분석 자료 공유 예정입니다. 링크: https://www.notion.so/ab9099a435a240ae5af305535ec42e08",1,llm_generated,19
+135,"다음 주 진행될 기술 강사 섭외 관련 자료, 노션 페이지 참고해주세요: https://www.notion.so/aefcfad8efc89849b3aa7efe4458a885",1,llm_generated,19
+136,"이번 달 동아리 운영 계획 회의 안건, 미리 검토 후 의견 주시면 감사하겠습니다. 링크: https://www.notion.so/a28defe39bf0027312476f57a5e5a5ab",1,llm_generated,19
+137,이번 주 미팅 시간 혹시 다른 제안 있으시면 말씀해주세요.,0,llm_generated,20
+138,새로운 아이디어 있으면 언제든지 편하게 얘기해요.,0,llm_generated,20
+139,내일 아침 9시에 간단한 점검 회의 있을 예정이니 참석 부탁드립니다.,0,llm_generated,20
+140,이번 달 행사 준비는 어떻게 되는지 한번 짚고 넘어가자구요.,0,llm_generated,20
+141,이번 주 주차 회의 안건은 오늘 아침 회의록에 정리했습니다. 회의록 페이지 확인 부탁드립니다: https://www.notion.so/3eabedcbbaa80dd488bd64072bcfbe01,1,llm_generated,21
+142,다음 달 IT 컨퍼런스 참가 신청 마감일이 다가오고 있습니다. 참가 신청 링크는 여기 있습니다: https://www.notion.so/451b4cf36123fdf77656af7229d4beef,1,llm_generated,21
+143,이번 프로젝트 발표 자료 디자인 초안을 작업 중입니다. 피드백 부탁드립니다: https://www.notion.so/b02b61c4a3d70628ece66fa2fd5166e6,1,llm_generated,21
+144,새로운 보안 교육 프로그램 관련 자료를 준비 중입니다. 참고하시기 바랍니다: https://www.notion.so/5304317faf42e12f3838b3268e944239,1,llm_generated,21
+145,다음 주 드라이브 세션 장소와 시간 확정했습니다. 참석 여의치 않으신 분은 미리 알려주세요: https://www.notion.so/0e51f30dc6a7ee39c4b032ccd7c524a5,1,llm_generated,21
+146,"내일 미팅 시간 오후 3시로 확정했는데, 혹시 늦지 않게 조심해야 해.",0,llm_generated,22
+147,"이번 주말에 하는 프로젝트, 진행 상황 한번 공유해 주실 분 있을까?",0,llm_generated,22
+148,"새로운 툴 도입 관련해서, 혹시 사용법에 대한 간단한 튜토리얼 같은 거 있을까 궁금해서.",0,llm_generated,22
+149,알려주셔서 감사합니다.,0,llm_generated,22
+150,이번 달 프로젝트 진행 상황 공유 회의 드라이브에 올려놨습니다. https://www.notion.so/ce177b4e0837b8a3d261a7ab3aa2e4f9 솔직하게 의견 공유 부탁드립니다.,1,llm_generated,23
+151,다음 주 웹사이트 리뉴얼 관련 디자인 시안 노션 페이지에 첨부했습니다. https://www.notion.so/10f1bc81448aaa9e66b2bc5b50c187fc 반드시 검토 부탁드립니다.,1,llm_generated,23
+152,새로운 홍보 채널 확보를 위한 아이디어 제안서 노션 페이지에 업데이트했습니다. https://www.notion.so/9132b63ef16287e4e9c349e03602f8ac 현재 검토 중이니 참고 부탁드립니다.,1,llm_generated,23
+153,이번 주 운영 회의 안건 미리 확인하시고 의견 있으시면 금요일까지 알려주세요. 노션 페이지 링크: https://www.notion.so/366eb16f508ebad7b7c93acfe059a0ee 빠른 검토 부탁드립니다.,1,llm_generated,23
+154,새로운 기술 스택 도입에 대한 추가 자료 드라이브 폴더에 업로드했습니다. https://www.notion.so/e27a984d654821d07fcd9eb1a7cad415 수정 사항이 있으면 말씀해주세요.,1,llm_generated,23
+155,"이번 주말 서버 구축 프로젝트, 혹시 각자 준비 상황 알려줄 수 있을까요?",0,llm_generated,24
+156,"내일 오후 3시 회의, 미팅룸으로 옮겼습니다. 늦지 않게 오세요.",0,llm_generated,24
+157,"새로 합류한 안니, 동아리 챗봇 프로젝트에 관심 있다면 언제든 편하게 말씀해주세요.",0,llm_generated,24
+158,"이번 달 홍보 영상 제작, 아이디어 있으면 공유 부탁드립니다.",0,llm_generated,24
+159,지난번 문제 해결 관련해서 다시 한번 정리된 내용 보내드릴게요.,0,llm_generated,24
+160,"이번 주 노트북 구매 관련 견적 다 가져왔습니다. https://www.notion.so/24933b83757750a9a491f0b2ea1fca65 모든 부원에게 동일하게 구매할 예정이니, 혹시 의견 있으시면 말씀해주세요.",1,llm_generated,25
+161,"다음 주 정기 회의 안건은 '동아리 웹사이트 리뉴얼 방향 설정'입니다. 관련 자료는 노션 페이지에서 확인해주세요 https://www.notion.so/beb799193f22faf823bed01d43cf2fde 수요일 2시, 온라인으로 진행될 예정입니다.",1,llm_generated,25
+162,이번 달 IT 경진대회 참가 신청 마감일이 얼마 남지 않았습니다. 신청서를 다운로드 받으실 수 있는 링크입니다 https://www.notion.so/bf3c4c06434308bc89fa6a688fb5d27b 참가비는 개인 부담입니다.,1,llm_generated,25
+163,다음 달 진행 예정인 '보안 교육' 관련 자료를 준비 중입니다. 교육 내용 및 참여 방법을 담은 노션 페이지를 공유드립니다 https://www.notion.so/956269f0e5d7b8756dadd6c795a76d79 운영진의 의견을 종합하여 교육 내용을 확정하겠습니다.,1,llm_generated,25
+164,이번 주 회의록 초안을 작성 중에 있습니다. 회의 내용 및 결정 사항을 담아내겠습니다. 회의록은 노션 페이지에서 확인하실 수 있습니다 https://www.notion.so/ff50bde4382567b85cabcc97663f1c97 운영진에게 피드백 부탁드립니다.,1,llm_generated,25
+165,이번 주 주차 준비물은 혹시 잊으신 거 없으신가요?,0,llm_generated,26
+166,다음 달 15일 회의 시간 오후 6시로 조정했는데 괜찮으신가요?,0,llm_generated,26
+167,"저 어제 발표 연습 좀 했는데, 혹시 수정해야 할 부분 있으면 말씀해주세요.",0,llm_generated,26
+168,새로 합류하는 맴버 환영합니다! 잘 적응하시길 바랍니다.,0,llm_generated,26
+169,내일 장비 점검 시간 다시 한번 확인 부탁드립니다.,0,llm_generated,26
+170,이번 달 서버 유지보수 일정 관련 자료 업데이트했습니다. https://www.notion.so/7e570ddf827050a82369b584ff5e9ff0,1,llm_generated,27
+171,다음 주 프로젝트 발표 자료 제작 가이드라인 공유드립니다. https://www.notion.so/dc713d960c0fd195c17af08a1745d6d8,1,llm_generated,27
+172,이번 주 활동 결과 보고서 양식 업데이트했습니다. https://www.notion.so/28f49481a0a04dc427209bdf1c11f735,1,llm_generated,27
+173,"다음 달 IT 컨퍼런스 참가 신청 마감일이 다가오니, 빠른 시일 내에 신청해주세요. https://www.notion.so/98ae43346c12ace8ae340454cac5b68c",1,llm_generated,27
+174,새로운 보안 솔루션 도입 관련 제안서 첨부했습니다. https://www.notion.so/988c24c961b1cd2262801c4510435a10,1,llm_generated,27
+175,"이번 주 서버 구축 프로젝트, 혹시 썰렁한 느낌 드시는 분 계신가요?",0,llm_generated,28
+176,"제가 새로 산 노트북, 내일 혹시 긱스 연습 때 가져가도 될까요?",0,llm_generated,28
+177,다음 주 회의 안건 미리 보고 말씀해주시면 좋을 것 같아요.,0,llm_generated,28
+178,"오늘 저녁 메뉴 정하는 거, 볶음밥 해먹을까요?",0,llm_generated,28
+179,혹시 이번 주말에 같이 게임 할 사람 구합니다.,0,llm_generated,28
+180,이번 주 스터디 자료는 노션 페이지에 업데이트했습니다. https://www.notionsofficialexample.com/meetingagenda,1,llm_generated,29
+181,다음 주 정기 회의 안건을 미리 검토 부탁드립니다. 관련 자료는 드라이브 링크에서 확인해주세요: https://www.dropbox.com/s/abcdef1234567890/meeting_proposal.pdf,1,llm_generated,29
+182,새로운 프로젝트 아이디어 제안서 초안을 작성했습니다. 검토 후 피드백 부탁드립니다. 링크: https://www.notionsofficialexample.com/projectideas,1,llm_generated,29
+183,이번 달 활동 예산 사용 내역을 업데이트했습니다. 첨부 파일 확인해주세요. https://www.google.com/drive/folders/0Bw7xK8zL-dO0T9x,1,llm_generated,29
+184,다음 달 스터디 주제에 대한 의견을 수렴하고자 합니다. 헌팅 폼 링크: https://www.notionsofficialexample.com/survey,1,llm_generated,29
+185,이번 주 미팅 안건 미리 읽어보고 오시면 좋을 것 같아요.,0,llm_generated,30
+186,내일 행사 준비물 다시 한번 확인 부탁드립니다.,0,llm_generated,30
+187,"제가 새로 산 노트북, 다들 써보시고 의견 한번 부탁할게요.",0,llm_generated,30
+188,이번 달 정산 관련해서 좀 더 자세한 내용 공유하려고 합니다.,0,llm_generated,30
+189,저녁에 떡볶이 먹을 분들 모여서 연락 주세요!,0,llm_generated,30
+190,이번 주 업계 뉴스 정리 자료 업데이트했습니다. 노션 페이지 참고 부탁드립니다: https://www.notionsofficial.com/7e9a8b2d3c1f5a4b9d0e1f2a3b4c5d67,1,llm_generated,31
+191,다음 주 스터디 주제 건의해주세요. 아이디어는 최대한 빨리 공유해주시면 좋습니다. 노션 링크: https://www.notion.so/405cacec877409a977d21e02ff01cf99,1,llm_generated,31
+192,이번 달 활동 보고서 작성 마감일 연장합니다. 5월 15일까지 제출해주시면 됩니다. 관련 양식은 노션에서 확인: https://www.notion.so/f143262fdc5c0eed8da0365bf89897b9,1,llm_generated,31
+193,다음 주 정기 회의 시간 변경되었습니다. 19시부터 21시까지 진행될 예정입니다. 노션 링크를 통해 회의 안건 확인해주세요: https://www.notion.so/1d53434bb88139b9ae270da702f06b90,1,llm_generated,31
+194,이번 주 진행 상황 공유 부탁드립니다. 각 세션별 결과와 다음 단계 아이디어를 짧게 정리해서 노션 페이지에 올려주세요: https://www.notion.so/c03987108976e334e2817efdae849217,1,llm_generated,31
+195,내일 발표 자료 디자인 수정 도와줄 사람 있나요?,0,llm_generated,32
+196,오늘 저녁 7시에 프로젝트 미팅 다시 한번 할까요?,0,llm_generated,32
+197,새로운 아이디어 있으면 언제든지 편하게 공유해주세요.,0,llm_generated,32
+198,이번 주말에 팀 회식 장소 정하는 거 도와주세요.,0,llm_generated,32
+199,혹시 지난번 세미나 사진 보관하고 있나요?,0,llm_generated,32
+200,이번 주 회의 안건 미리 공유드립니다. 노션 페이지 확인 부탁드립니다: https://docs.notion.so/2tY6zL8rN9wJq9zX8yQ9bV2mP7o1aR3f,1,llm_generated,33
+201,새로운 웹사이트 디자인 초안 작업 진행 상황 업데이트입니다. 관련 자료는 드라이브 폴더에서 확인해주세요: https://drive.google.com/folders/1-xLpQ8h5dJg2iZ4r9s5bT7cW8v,1,llm_generated,33
+202,다음 달 IT 컨퍼런스 참가 신청 마감일이 얼마 남지 않았습니다. 관심 있으신 분들은 빠르게 신청해주세요: https://forms.gle/a4Y9sU2vXo78hL5p,1,llm_generated,33
+203,지난 주 서버 유지보수 작업 결과 보고서 공유합니다. 자세한 내용은 노션 페이지 참고 부탁드립니다: https://www.notion.so/5715bd6fa4161293c4c2e2e3444ea7c8,1,llm_generated,33
+204,다음 주 진행될 기술 세미나 발표자 섭외 관련 논의를 위한 회의 일정 확정했습니다. 회의록은 추후 공유드리겠습니다.,1,llm_generated,33
+205,이번 주말 워크숍 장소는  entschieden wir für das Gemeindezentrum. Passt das für euch?,0,llm_generated,34
+206,Ich habe den Fehler bei der Präsentation entdeckt und korrigiert. Soll ich es allen nochmal schicken?,0,llm_generated,34
+207,Nur zur Info: Die neue Software-Version kommt nächste Woche. Wir müssen uns damit vertraut machen.,0,llm_generated,34
+208,"Wer übernimmt die Social-Media-Posts für den nächsten Monat? Denk dran, regelmäßig zu bleiben!",0,llm_generated,34
+209,Kann jemand kurz die Erinnerung an die Aufgabenverteilung nochmal zusammenfassen? Danke!,0,llm_generated,34
+210,이번 주 주차 회의 안건 미리 검토 부탁드립니다. 관련 자료는 드라이브 링크 참조: https://drive.google.com/open?id=1QzXy78a9bV2pL3m4k5o6n7j8h9i0,1,llm_generated,35
+211,이번 달 IT 컨퍼런스 참가 신청 마감일이 얼마 남지 않았습니다. 링크를 통해 신청해주세요: https://www.notion.so/287d06ca6f4cc69a4b22d3081c8eaee9,1,llm_generated,35
+212,새로운 웹사이트 디자인 초안을 노션 페이지에 업로드했습니다. 디자인 방향에 대한 피드백 부탁드립니다: https://www.notion.so/b8db0672f42d47cc00d4af5974273ca3,1,llm_generated,35
+213,다음 주 진행될 시스템 구축 관련 회의 시간 변경되었습니다. 새로운 시간은 오후 2시입니다. 관련 내용 확인: https://www.notion.so/f8cda88b436d76e2b83cfe0be037e5ed,1,llm_generated,35
+214,이번 주 업계 뉴스레터 공유 링크입니다: https://www.notion.so/81f76d1c2dbc2134c30ff46e8026695f,1,llm_generated,35
+215,이번 주말 창의성 워크샵 장소는 찜해둔 카페로 할까요?,0,llm_generated,36
+216,내일 서버 구축 관련해서 김민지 씨랑 같이 가보시는 거 어때요?,0,llm_generated,36
+217,"저녁 메뉴 정하는 거 너무 어려운데, 떡볶이 시켜 먹을까요?",0,llm_generated,36
+218,오늘 발표 연습은 꼭 해두시길 바랍니다. 시간 되면 저한테 피드백 부탁해요.,0,llm_generated,36
+219,"새로운 프로젝트 팀 구성 관련해서, 몇 시에 간단히 모여볼까요?",0,llm_generated,36
+220,이번 주 금요일까지 깃허브 저장소에 프로젝트 코드 업로드 부탁드립니다.  https://www.notion.so/a013ac6ededa4e161b3dbd5ce9a1fa6f,1,llm_generated,37
+221,다음 주 운영진 회의 관련 자료는 노션 페이지에서 확인해주세요. https://www.notion.so/81f631d4a39231a7d777a4774c66e0a8,1,llm_generated,37
+222,새로운 웹사이트 디자인 초안을 피그마에 공유했습니다.  참고 부탁드립니다. https://www.notion.so/5fb8d16c2720797d32ebd6899be578c7,1,llm_generated,37
+223,이번 달 동아리 활동 계획에 대한 제안을 깃허브 이슈로 남겨주세요.  https://www.notion.so/f4188f3f8a14be62295b4715c333e861,1,llm_generated,37
+224,대회 참가 신청 마감일이 다가오고 있습니다.  https://www.notion.so/eb2263dd87c5421eec24a3c5c754108f,1,llm_generated,37
+225,이번 주말 서버 점검 관련해서 혹시 시간 괜찮으신 분은 미리 필요한 부품 준비 부탁드려요.,0,llm_generated,38
+226,오늘 발표 자료 어떤 내용으로 할지 한번 더 상의해 보면 좋을 것 같아.,0,llm_generated,38
+227,"내일 행사 장소, 꼼꼼히 확인하고 가셔야 합니다! 잊지 마세요.",0,llm_generated,38
+228,새로운 프로젝트 아이디어 있으신 분들은 언제든 편하게 말씀해주세요.,0,llm_generated,38
+229,오늘 회의록은 제가 작성해야 할까요?,0,llm_generated,38
+230,이번 주 금요일 밤 8시에 진행될 기술 세미나 발표 자료 드라이브 폴더 공유드립니다. https://drive.google.com/drive/folders/1XyZ9aBcDeFgHjKlMnOpQrStUvW0X,1,llm_generated,39
+231,"다음 주 화요일 오전에 진행될 시스템 구축 미팅 관련, 필요한 서버 사양 목록 노션 페이지 업데이트했습니다. https://www.notion.so/7d15438552fbe43b99546eb400257ad1",1,llm_generated,39
+232,이번 달 행사 후원 문의 진행 상황 업데이트 시트 공유합니다. https://docs.google.com/spreadsheets/d/1U8iV2oJkLpNmQzRtWxSfYtHbVc3e4g,1,llm_generated,39
+233,대회 참가 신청서 양식 수정 완료했습니다. 수정된 양식은 노션 페이지의 '참가 신청' 섹션에서 확인해주세요. https://www.notion.so/5cec4eb5edd968311ca35cfb04fc6d82,1,llm_generated,39
+234,다음 주 수요일 오후 3시에 진행될 운영 회의 안건 미리 공유드립니다. 안건은 노션 페이지를 통해 확인해주세요. https://www.notion.so/ce88cb2dd4e80839fc3e058be0f3eab0,1,llm_generated,39
+235,이번 주말 서버 점검 준비는 어떻게 될까요?,0,llm_generated,0
+236,"내일 발표 자료 훑어봤는데, 혹시 수정해야 할 부분 있으면 말씀해주세요.",0,llm_generated,0
+237,오해하다가 연락할 내용 있어서요. 확인 부탁드립니다.,0,llm_generated,0
+238,오늘 오후에 1시간 정도 시간 괜찮으세요?,0,llm_generated,0
+239,지난번 회의 안건 정리본 다시 한번 보내드릴까요?,0,llm_generated,0
+240,이번 주 서버 점검 관련 자료는 노션 페이지에서 확인 부탁드립니다: https://www.notion.so/3da9c2a90ed42f1a3d4cbf374eb93eff,1,llm_generated,1
+241,다음 주 웹사이트 개선 회의 일정은 노션 캘린더에 등록했습니다: https://www.notion.so/14296c07f26b4776913e4de2e0c53cb8,1,llm_generated,1
+242,새로운 IT 트렌드 분석 보고서 링크입니다: https://www.notion.so/d0e6e6607c69dee1bb5e4bcf15ed6269,1,llm_generated,1
+243,이번 달 동아리 활동 예산안 초안을 노션에 공유했습니다: https://www.notion.so/885f6e66c2b6d2c5fa5d310011b7e948,1,llm_generated,1
+244,다음 주 진행될 멘토링 프로그램 관련 질문이 있으시면 언제든 문의해주세요.,1,llm_generated,1
+245,내일 미팅 시간 다시 한번 확인 부탁드립니다.,0,llm_generated,2
+246,이번 주말 행사 준비물은 챙겨야 할 거 같아요.,0,llm_generated,2
+247,새로운 아이디어 있으시면 언제든지 말씀해주세요.,0,llm_generated,2
+248,다음 주 세미나 자료 보시는 분들께서는 미리 준비해주세요.,0,llm_generated,2
+249,오늘 밤 야근 예상되네요… 다들 힘내세요!,0,llm_generated,2
+250,이번 주 노트북 구매 관련 견적 비교 자료가 노션에 정리되어 있습니다 https://www.notion.so/a8e56e0c20de435d2031d750c40db9b4 꼼꼼히 확인 부탁드립니다.,1,llm_generated,3
+251,다음 주 운영 회의 안건 및 준비물은 회의록 노션 페이지를 참고해주세요 https://www.notion.so/2a45c2ab8cbfedb0f264accc79ac1b1e 잊지 마시고요.,1,llm_generated,3
+252,이번 달 IT 컨퍼런스 참가 신청 마감일이 얼마 남지 않았습니다 https://www.notion.so/9b49bd26df57c59a8715a10343dac043 늦지 않게 신청해주세요.,1,llm_generated,3
+253,새로운 프로젝트 ‘별하기반’ 관련 스크립트 초안이 드라이브에 업로드되었습니다 https://drive.google.com/file/d/1aBcDeFgHiJkLmNoPqRsTuVwXyZ0a1B2/view 꼼꼼히 검토 부탁드립니다.,1,llm_generated,3
+254,이번 주 회의 주제인 클라우드 서비스 도입 방안에 대한 사전 자료를 노션에 공유했습니다 https://www.notion.so/edcd465e36386821f6e07cc06c52c49f 회의에 적극적으로 참여해주세요.,1,llm_generated,3
+255,"이번 주말 워크숍 장소 확정했는데, 혹시 거기로 참석 가능하신 분 알려주세요.",0,llm_generated,4
+256,내일 미팅 시간 오후 3시로 수정하는 거 동의하시죠?,0,llm_generated,4
+257,새로운 프로젝트 기획안 검토 부탁드려요. 늦어도 다음 주까지 보내주시면 감사하겠습니다.,0,llm_generated,4
+258,이번 달 활동비 사용 내역 다시 한번 확인해봐야겠어요.,0,llm_generated,4
+259,새로 들어오는 멤버 환영합니다! 잘 적응할 수 있도록 도와주세요.,0,llm_generated,4
+260,이번 주 서버 점검 관련 자료 노션 페이지 업데이트했습니다. → [https://www.notion.so/b09b2a5cbadcc32ac1590f538a0f4efb,1,llm_generated,5
+261,새로 만든 웹사이트 디자인 시안 드라이브에 올려놨습니다. 공유 드라이브 → 2024년 봄 → 웹사이트 디자인 시안,1,llm_generated,5
+262,내일 오후 2시 정시 회의록 작성 관련 자료 노션 페이지 링크입니다. → [https://www.notion.so/66245bfa4fcca39ab683d2e6337ea2df,1,llm_generated,5
+263,이번 달 동아리 활동 보고서 템플릿 운영진 노션 페이지 확인 부탁드립니다. → [https://www.notion.so/5f987c71a65e688eabf3ad39fec21bbe,1,llm_generated,5
+264,다음 주 주차 회의 안건 초안 드라이브에 업로드했습니다. 공유 드라이브 → 2024년 5월 → 회의 안건 초안,1,llm_generated,5
+265,이번 주말에 서버 점검하는 거 제대로 마무리했는지 확인 부탁드립니다.,0,llm_generated,6
+266,새로 온 맴버분께 필요한 자료 있으면 바로 알려주세요.,0,llm_generated,6
+267,"다음 달 15일, 온라인 강사님 특강 시간 다시 한번 확인하고 알려주세요.",0,llm_generated,6
+268,"이번 프로젝트 발표 자료, 깃허브에 올리는 거 제가 도와드릴까요?",0,llm_generated,6
+269,"오늘 저녁 7시, 간단한 회의 한번 할까요?",0,llm_generated,6
+270,이번 주 주차 회의 안건은 모두 드라이브 폴더 '회의록'에 업로드되어 있습니다. 꼼꼼히 확인 부탁드립니다.,1,llm_generated,7
+271,새로운 웹사이트 구축 관련 자료는 노션 페이지 '웹사이트 기획'에서 확인하실 수 있습니다. 디자인 방향에 대한 의견은 다음 회의에서 논의하겠습니다.,1,llm_generated,7
+272,다음 달 IT 경진대회 참가 신청 마감일이 10월 27일까지입니다. 관련 공지사항은 노션 페이지 '대회 준비'를 참고해주세요.,1,llm_generated,7
+273,이번 달 운영비 지출 내역은 드라이브 폴더 '재무'에 첨부 파일 형태로 있습니다. 수정 사항이 있다면 언제든지 알려주세요.,1,llm_generated,7
+274,새로운 협업 툴 도입 방안에 대한 브레인스토밍 결과는 노션 페이지 '툴 도입 검토'에 정리했습니다. 추가 아이디어가 있다면 자유롭게 공유해주세요.,1,llm_generated,7
+275,"이번 주말부턴 깃헙 컨트리뷰션 스터디로 넘어가서, 방금 톤다운 톤 톤하게 진행할 예정이야.",0,llm_generated,8
+276,내일 회의 시간 좀 조정 가능할까? 늦잠 자는 사람 좀 불러줘.,0,llm_generated,8
+277,새로운 프로젝트 아이디어 있으면 언제든 얘기해줘. 긍정적인 피드백 부탁!,0,llm_generated,8
+278,"이번 달 이벤트 아이디어 구상중인데, 꿀 아이디어가 있으면 공유해줘.",0,llm_generated,8
+279,오늘 밤 10시 이후로 작업량 풀파워로 진행하는 건 어때?,0,llm_generated,8
+280,이번 주 주차 회의 안건 미리 확인 부탁드립니다. 관련 자료는 노션 페이지 링크 참조해주세요: https://www.notion.so/7394988f847fd9b4e64d1bcb702753a1,1,llm_generated,9
+281,"다음 달 IT 컨퍼런스 참가 신청 마감일이 다가오니, 오늘까지 신청해주시면 됩니다. 신청서 링크: https://www.notion.so/1064005c3985c3cf3f76be1d1efa2197",1,llm_generated,9
+282,이번 학기 프로젝트 발표 자료 템플릿을 노션에 업로드했습니다. 활용해주세요: https://www.notion.so/8dcdcd03969b666205628059568cc69b,1,llm_generated,9
+283,스터디 그룹 회의 시간 변경되었습니다. 새로운 시간은 3월 8일 금요일 오후 7시입니다. 확인 부탁드립니다.,1,llm_generated,9
+284,이번 주 회의에서 논의할 사항을 정리한 노션 페이지 링크입니다: https://www.notion.so/01d7425638602ab696a402f23ae8cc93,1,llm_generated,9
+285,이번 주말 IT컨퍼런스 발표자료 다시 한번씩 훑어보시는 거 추천해요.,0,llm_generated,10
+286,혹시 다음 주 운영진 회의 시간 조금 더 조정 가능하신 분 계신가요?,0,llm_generated,10
+287,"내일 오전 간단하게 1시간 정도 미팅 있을 예정인데, 혹시 못 오시는 분 말씀 부탁드립니다.",0,llm_generated,10
+288,새로운 프로젝트 아이디어 있으신 분 있으면 언제든 편하게 말씀해주세요.,0,llm_generated,10
+289,오늘 저녁에 떡볶이 같이 먹을 분들 모여주세요!,0,llm_generated,10
+290,이번 주 서버 구축 프로젝트 관련 자료 정리 노션 페이지 업데이트했습니다: https://www.notion.so/0f1259e0a18ff6b6b535106e122c9a56,1,llm_generated,11
+291,다음 주 회의 안건 및 참석자 확인을 위해 구글 시트 공유드립니다: https://docs.google.com/spreadsheets/d/1XzYv8uWqRsT2pLdJ9kM1h5n6o7a8b,1,llm_generated,11
+292,"이번 달 IT 컨퍼런스 참가 정보 확인하시고, 관심 있는 세션 미리 예약 부탁드립니다: https://www.notion.so/080aadfbe7c99b26114125c63a9bedd4",1,llm_generated,11
+293,이번 주 업계 뉴스레터 구독 링크 공유합니다. 꾸준히 IT 트렌드 확인해주세요: https://www.notion.so/839fbc501223b5135496f63cdc1110c1,1,llm_generated,11
+294,다음 주 진행될 기술 세미나 장소 최종 확정 및 교통편 관련 안내를 노션에 남겨놨습니다: https://www.notion.so/7c441fe7ab4220a7474a493b3ceddf2d,1,llm_generated,11
+295,오늘 깃헙 저장소 업데이트는 언제 할까요?,0,llm_generated,12
+296,이번 주말에 서버 점검하는 거 혹시 시간 조정 가능할까요?,0,llm_generated,12
+297,다음 주 회의 안건 미리 공유해주시면 좋겠어요.,0,llm_generated,12
+298,"새로운 프로젝트 아이디어 있는데, 잠깐 시간 괜찮으시면 얘기 나눌 수 있을까요?",0,llm_generated,12
+299,"오늘 저녁 7시, 온라인 회의 진행하겠습니다.",0,llm_generated,12
+300,새로 만든 설문조사 결과 공유 문서 드라이브에 올려드렸습니다. 참고하시고 의견 있으시면 바로 말씀해주세요. → 드라이브 링크: https://www.notion.so/b92da22b21df306f8a0b3c3336d8393a,1,llm_generated,13
+301,다음 주 진행되는 기술 세미나 발표 자료는 노션 페이지에 업로드했습니다. 참석자분들은 발표 자료를 미리 검토해주세요. https://www.notion.so/93829b43922fe15ae1e3db63ef7ddc76,1,llm_generated,13
+302,이번 달 IT 컨퍼런스 참가 신청 마감일이 얼마 남지 않았습니다. 참석 여부를 결정하고 신청해주세요. 관련 안내는 노션 페이지를 참고하세요. https://www.notion.so/7914c120c8dcd19f3e3511287900f7f9,1,llm_generated,13
+303,이번 주 스터디 내용 및 과제는 노션 페이지에 상세하게 정리했습니다. 꼼꼼히 확인하시고 질문 있으시면 언제든지 문의해주세요. https://www.notion.so/1825bc5430beb45f683514f2ceb81f9d,1,llm_generated,13
+304,다음 회의 안건 미리 검토를 부탁드립니다. 참석자분들은 관련 문서 링크를 확인하고 의견을 준비해주세요. https://www.notion.so/5ab33edf6e595ed3a8b317fa18d0752b,1,llm_generated,13
+305,이번 주말 서버 점검 회의 시간 오후 2시로 조정했는데 괜찮으신가요?,0,llm_generated,14
+306,미술관 투어는 17일에 진행하는 거 맞죠?,0,llm_generated,14
+307,내일 회의 안건 미리 읽어보고 와주시면 감사하겠습니다.,0,llm_generated,14
+308,저녁 메뉴 정할 사람 한 명 더 모시겠습니다.,0,llm_generated,14
+309,방명록 업데이트는 제가 맡겠습니다.,0,llm_generated,14
+310,이번 주 금요일 IT 스터디 자료 정리 노션 페이지 링크 공유드립니다: https://www.notion.so/dd2467ac778eedb3693dffbc6c6fa611,1,llm_generated,15
+311,다음 주 회의 안건 초안을 드라이브에 업로드했습니다. 확인 부탁드립니다: https://www.notion.so/a748dbcfac619e630dde29a6baa4b71a,1,llm_generated,15
+312,새로운 부원 교육 자료를 노션에 업데이트했습니다. 교육생들에게 배포해주세요: https://www.notion.so/0f844fef1931e9eea56c0941fbf24050,1,llm_generated,15
+313,이번 달 행사 홍보물 디자인 파일은 구글 드라이브에 있습니다: https://www.notion.so/ccf3a17156dc8907ba6c34ab6712303a,1,llm_generated,15
+314,다음 주 운영진 회의 시간 및 장소는 노션 페이지에서 확인해주세요: https://www.notion.so/310c0c003fa7f1041bf90e27dc96925e,1,llm_generated,15
+315,이번 주 금요일 밤에 새로운 프로젝트 기획 회의 있겠죠?,0,llm_generated,16
+316,"저번에 말씀하신 보안 관련 강의, 언제 시간 괜찮으세요?",0,llm_generated,16
+317,모두들 이번 달 운영비 지출 내역 확인 부탁드립니다.,0,llm_generated,16
+318,"새로운 팀원 오피스 배치, 다음 주 중에 챙겨주실 분 있으신가요?",0,llm_generated,16
+319,"오늘 아침에 겪었던 문제 해결 방법, 따로 정리해서 공유해주시면 좋겠어요.",0,llm_generated,16
+320,"이번 주 서버 구축 프로젝트 관련 회의록 드라이브에 업로드했습니다. 1234567890abcdef1234567890abcdef, 9876543210fedcba9876543210fedcba 경로 참고 부탁드립니다.",1,llm_generated,17
+321,다음 주 IT 컨퍼런스 참가 신청서 링크 공유합니다. https://www.notion.so/23e2fcb472d8567d894a05e430b187ef 9876543210fedcba9876543210fedcba 확인 후 신청해주세요.,1,llm_generated,17
+322,이번 달 보안 교육 자료 노션 페이지 업데이트 완료했습니다. 부원분들의 학습에 참고 부탁드립니다. 링크: https://www.notion.so/766ecb15474ebc192ef912766c006f61 9876543210fedcba9876543210fedcba,1,llm_generated,17
+323,다음 주 진행될 프로젝트 기획 회의 안건 미리 검토 부탁드립니다. 관련 자료는 드라이브 링크 참조: https://www.notion.so/134c6c92ec5b227cdfde4fbf3ff350bf 9876543210fedcba9876543210fedcba,1,llm_generated,17
+324,이번 주 발표 자료 초안 공유드립니다. https://www.notion.so/db20a56edc815fe7ceda8bbb71710434 9876543210fedcba9876543210fedcba 수정 및 의견 부탁드립니다.,1,llm_generated,17
+325,"이번 주말 서버 점검, 혹시 시간 괜찮은 분 있는지 확인 부탁드립니다.",0,llm_generated,18
+326,새로운 프로젝트 아이디어 있으시면 언제든지 편하게 말씀해주세요.,0,llm_generated,18
+327,"내일 회의 시간, 3시로 수정될 예정이니 다시 한번 확인 부탁드립니다.",0,llm_generated,18
+328,"웹사이트 디자인 폰트, 어떤 스타일이 좋을까요?",0,llm_generated,18
+329,"오늘 발표 자료, 혹시 수정할 내용 있으면 알려주세요.",0,llm_generated,18
+330,"이번 주 금요일 밤 8시, 깃허브 프로젝트 데모 회의 일정 확정했습니다. 링크: https://www.notion.so/a6f2f7b80cf35b5819108be58ce21ea3",1,llm_generated,19
+331,새로운 웹사이트 디자인 초안 깃허브 저장소에 추가했습니다. 확인 부탁드립니다: https://www.notion.so/03c72ba8d605e7708a63f881ffd0f9d5,1,llm_generated,19
+332,다음 달 서버 점검 관련 자료 드라이브에 업로드했습니다. 폴더 위치: https://www.notion.so/c0e9ab30ed2662e917e011b7f8102383,1,llm_generated,19
+333,"새로운 시스템 도입 관련 문서 초안 작성, 여러분의 의견 부탁드립니다. 노션 페이지: https://www.notion.so/680ac07a2a935d623c835dc0d9441fa5",1,llm_generated,19
+334,"이번 주말 개최 예정인 해커톤 참가 신청서 제출 마감일이 다가오니, 잊지 마세요. 링크: https://www.notion.so/dd59ba7136b824817b3a4e3e7c52fa17",1,llm_generated,19
+335,이번 주말부로 깃헙 페이지 디자인 좀 싹 정리해주실 분 있으신가요?,0,llm_generated,20
+336,오늘 발표 자료 톤 다운되게 만들어줘도 될까요?,0,llm_generated,20
+337,내일 1시 IT 컨퍼런스 장소 확인하고 오세요.,0,llm_generated,20
+338,혹시 노트북 배터리 문제 있는 사람 있는지 확인 부탁드립니다.,0,llm_generated,20
+339,내일 오후 6시 모임 장소는 2층 카페로 정하는 거 어때요?,0,llm_generated,20
