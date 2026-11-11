@@ -33,13 +33,16 @@ def load_seeds():
 
 
 PROMPT = """대학 IT 동아리 운영진 카카오톡 단톡방 메시지를 만듭니다.
-아래 예시와 비슷한 상황의 새 메시지 {k}개를 쓰세요.
+아래 예시들과 같은 말투, 같은 길이로 새 메시지 {k}개를 쓰세요.
 {rule}
-- 카톡처럼 짧고 편한 말투 (10~60자, 링크 제외)
+- 동아리 운영진이 실제로 보내는 평범한 업무 연락처럼 쓰세요.
+- 이모지, 유행어, 과장된 표현, 느낌표 남발은 쓰지 마세요.
 - 실존 인물 이름, 이메일, 전화번호는 쓰지 마세요.
 - JSON 문자열 배열로만 답하세요. 예: ["메시지1", "메시지2"]
 
-예시: {text}"""
+예시:
+{examples}"""
+EMOJI = re.compile(r"[\U0001F000-\U0001FAFF☀-➿]")
 # 라벨별 규칙: 1차 생성에서 음성에도 URL이 들어가 라벨 노이즈가 생겨 분리함
 RULES = {
     1: "- 반드시 자료의 링크 또는 위치(노션 페이지 경로, 드라이브 폴더 등)를 알려주는 메시지\n"
@@ -61,11 +64,14 @@ def make_train(n_target=300, k=5):
     test_texts = pd.read_csv(test_path, encoding="utf-8-sig")["text"].astype(str).tolist()
     print(f"누수 검사 대상: {test_path} {len(test_texts)}건")
 
-    rows, n_leak, n_bad, n_url, i = [], 0, 0, 0, 0
+    rows, n_leak, n_bad, n_url, n_emoji, i = [], 0, 0, 0, 0, 0
     while len(rows) < n_target:
         s = seeds.iloc[i % len(seeds)]
         label = int(s["is_relevant"])
-        reply = ask(PROMPT.format(k=k, rule=RULES[label], text=s["text"]))
+        # 말투 기준점: 이번 시드 + 같은 라벨 시드 3개를 예시로 줌 (예시 1개면 모델이 자기 말투로 씀)
+        others = seeds[(seeds.is_relevant == label) & (seeds.text != s["text"])].sample(3, random_state=i)
+        examples = "\n".join(f"- {t}" for t in [s["text"], *others["text"]])
+        reply = ask(PROMPT.format(k=k, rule=RULES[label], examples=examples))
         i += 1
         try:  # 소형 모델은 가끔 JSON 형식을 틀림 → 그 응답만 건너뜀
             texts = [t for t in json.loads(reply[reply.find("["): reply.rfind("]") + 1]) if isinstance(t, str)]
@@ -80,6 +86,9 @@ def make_train(n_target=300, k=5):
             if label == 0 and "http" in t:  # 음성인데 링크가 들어간 문장은 라벨이 틀린 것 → 버림
                 n_url += 1
                 continue
+            if EMOJI.search(t):  # 시드에 없는 이모지 → AI 말투로 보고 버림
+                n_emoji += 1
+                continue
             rows.append({"text": t, "is_relevant": label, "source": "llm_generated", "seed_id": (i - 1) % len(seeds)})
 
     gen = dedup(rows)[:n_target]  # 생성물끼리 거의 같은 문장 제거
@@ -90,7 +99,7 @@ def make_train(n_target=300, k=5):
     train.to_csv("data/train.csv", index=False)
 
     seed_leak = sum(any(similarity(t, x) >= 0.6 for x in test_texts) for t in seeds["text"])
-    print(f"LLM 호출 {i}회 (JSON 형식 오류로 건너뜀 {n_bad}회), 생성 {len(rows) + n_leak + n_url}건 중 test 유사로 버림 {n_leak}건, 음성인데 URL 있어 버림 {n_url}건, 중복 제거 후 {len(gen)}건 사용")
+    print(f"LLM 호출 {i}회 (JSON 형식 오류로 건너뜀 {n_bad}회), 생성 {len(rows) + n_leak + n_url + n_emoji}건 중 test 유사로 버림 {n_leak}건, 음성인데 URL 있어 버림 {n_url}건, 이모지로 버림 {n_emoji}건, 중복 제거 후 {len(gen)}건 사용")
     print(f"시드 {len(hand)}건 중 test 유사 {seed_leak}건 (0이어야 함)")
     print(f"train.csv: {len(train)}건 (양성 {train['is_relevant'].sum()}, 음성 {(train['is_relevant'] == 0).sum()})")
 
