@@ -107,5 +107,58 @@ def make_train(n_target=300, k=5):
     print(f"train.csv: {len(train)}건 (양성 {train['is_relevant'].sum()}, 음성 {(train['is_relevant'] == 0).sum()})")
 
 
+FIX_COLS = ["location_url", "due_date"]
+
+
+def make_fix_sheets():
+    """test 양성 중 정답 칸(URL, 마감일)과 검색 질문을 사용자가 채우기 쉽게 시트로 뽑음
+    * 추출 결과(LLM 예측)는 넣지 않음 → 정답이 모델 답을 베끼면 정확도가 부풀려짐"""
+    from extract import DUE_CUE
+    from parse_kakao import URL
+    test = pd.read_csv("data/test.csv", encoding="utf-8-sig")
+    pos = test[test["is_relevant"] == 1].copy()
+    ts = pd.to_datetime(pos["timestamp"])
+    pos["weekday"] = ts.dt.dayofweek.map(lambda d: "월화수목금토일"[d])
+    pos["url_in_text"] = pos["text"].map(lambda t: " ".join(URL.findall(t)))  # 참고용, 원문 그대로
+    pos["due_cue"] = pos["text"].map(lambda t: "있음" if DUE_CUE.search(t) else "")
+    pos[["id", "timestamp", "weekday", "due_cue", "url_in_text", "location_url", "due_date", "text"]].to_csv(
+        "data/label_fix.csv", index=False, encoding="utf-8-sig")
+    pos["head"] = pos["text"].str.replace("\n", " ").str[:80]
+    pos[["id", "timestamp", "project_name", "file_type", "head"]].to_csv(
+        "data/queries_ref.csv", index=False, encoding="utf-8-sig")
+    if not Path("data/queries.csv").exists():
+        pd.DataFrame(columns=["query", "answer_ids"]).to_csv("data/queries.csv", index=False, encoding="utf-8-sig")
+    print(f"data/label_fix.csv {len(pos)}건 (마감 표현 {(pos.due_cue != '').sum()}, URL {(pos.url_in_text != '').sum()}), "
+          "data/queries_ref.csv, data/queries.csv")
+
+
+def apply_fix_and_check():
+    """label_fix.csv의 URL·마감일을 test.csv에 반영하고, queries.csv 형식을 검사"""
+    test = pd.read_csv("data/test.csv", encoding="utf-8-sig")
+    fix = pd.read_csv("data/label_fix.csv", encoding="utf-8-sig").set_index("id")
+    # review 칸에 "제외"가 남은 행은 test에서 뺌 (지원자 평가 등 민감 정보, 3.2절)
+    drop = fix.index[fix.get("review", pd.Series(dtype=str)).fillna("").str.contains("제외")]
+    test = test[~test["id"].isin(drop)]
+    if len(drop):
+        print(f"test에서 제외: id {list(drop)}")
+    fix = fix[FIX_COLS]
+    bad = fix["due_date"].dropna()
+    bad = bad[pd.to_datetime(bad, format="%Y-%m-%d", errors="coerce").isna()]
+    assert bad.empty, f"마감일은 YYYY-MM-DD 형식이어야 함: id {list(bad.index)}"
+    for c in FIX_COLS:
+        test[c] = test["id"].map(fix[c]).where(test["is_relevant"] == 1, test[c])
+    test.to_csv("data/test.csv", index=False, encoding="utf-8-sig")
+    print(f"test.csv 반영: URL {test.location_url.notna().sum()}건, 마감일 {test.due_date.notna().sum()}건")
+
+    q = pd.read_csv("data/queries.csv", encoding="utf-8-sig")
+    pos_ids = set(test.loc[test["is_relevant"] == 1, "id"])
+    for r in q.itertuples():
+        ids = [int(x) for x in str(r.answer_ids).split(";") if x.strip()]
+        wrong = [i for i in ids if i not in pos_ids]
+        assert ids and not wrong, f"'{r.query}': 정답 id가 없거나 양성 메시지가 아님 {wrong}"
+    print(f"queries.csv {len(q)}개 정상 (목표 15개)")
+
+
 if __name__ == "__main__":
-    {"template": make_template, "train": make_train}[sys.argv[1]]()
+    {"template": make_template, "train": make_train,
+     "fix-sheets": make_fix_sheets, "apply-fix": apply_fix_and_check}[sys.argv[1]]()
