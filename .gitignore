@@ -21,3 +21,4 @@ results/extraction.csv
 data/corrections.jsonl
 data/label_fix.csv
 data/queries_ref.csv
+*.tsbuildinfo
