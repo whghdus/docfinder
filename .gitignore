@@ -15,3 +15,9 @@ data/names.txt
 data/exclude_ranges.csv
 data/label_template.csv
 data/test.csv
+
+# 실제 로그에서 뽑은 필드(실제 노션 URL 포함). 집계 수치만 커밋
+results/extraction.csv
+data/corrections.jsonl
+data/label_fix.csv
+data/queries_ref.csv
