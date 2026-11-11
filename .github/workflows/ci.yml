@@ -1,0 +1,35 @@
+# PR과 main push마다 자동 검사. 실제 로그·LLM 없이 통과해야 함 (원본 데이터는 저장소에 없음)
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      # torch/transformers는 무거워서 CI에선 테스트에 필요한 것만 설치
+      - run: pip install pandas python-dotenv fastapi httpx pytest
+      - run: python -m compileall -q .   # 문법 오류 검사
+      - run: pytest -q                   # 3일차에 tests/ 생기면 동작
+        if: hashFiles('tests/**') != ''
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run build               # tsc 타입 검사 + Vite 빌드
